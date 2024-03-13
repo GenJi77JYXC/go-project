@@ -1,0 +1,40 @@
+# 数据库
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root 
+  password: Gen520 
+  database: test 
+
+minio:
+  endpoint: 127.0.0.1:9000
+  accessID: DsldLQhW6qlXjNpFtf6U
+  accessKey: XUVbfF6VGGWF1shk21X6PkH7EOf2gd2ORacaUurf
+  bucket: 
+    file : file
+    image : image
+
+mqtt:
+  host: 8.130.110.218
+  port: 1883
+  # username: genji
+  # password: genji520
+  username: admin
+  password: "123456"
+  topic: "metc"
+
+
+# server
+server:
+  port: 8080
+
+
+
+metc:
+  b303: "哈哈哈"
+
+
+# 微信小程序
+wx:
+  accessID: aaa
+  accessKey: aaa

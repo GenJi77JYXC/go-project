@@ -1,0 +1,20 @@
+# 数据库
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root 
+  password: Gen520 
+  database: test 
+# server
+server:
+  port: 8080
+
+
+metc:
+  b303: "哈哈哈"
+
+
+# 微信小程序
+wx:
+  accessID: aaa
+  accessKey: aaa

@@ -1,0 +1,13 @@
+FROM golang:1.21 as bulider
+ENV GOPROXY=https://goproxy.cn,direct
+ENV GO111MODULE="on"
+WORKDIR /root/
+COPY . .
+RUN CGO_ENABLE=0 GOARCH=amd64 GOOS=linux go build
+
+FROM alpine
+WORKDIR /root/
+COPY --from=bulider /root/goday3 .
+COPY --from=bulider /root/config/config.yml ./config/
+EXPOSE 8080
+ENTRYPOINT [ "./goday3" ]
